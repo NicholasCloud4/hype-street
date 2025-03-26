@@ -26,23 +26,28 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className="sticky top-0 z-50 bg-white shadow">
+        <nav className="sticky top-0 z-50 bg-gray-100 shadow border-b border-gray-300">
             <div className="container mx-auto flex items-center justify-between px-4 py-4">
-                <Link href="/" className="hover:text-blue-600">
+                <Link
+                    href="/"
+                    className="text-2xl font-bold hover:text-lime-400"
+                >
                     Hype Street
                 </Link>
-                <div className="hidden md:flex space-x-6">
-                    <Link href="/">Home</Link>
-                    <Link href="/products" className="hover:text-blue-600">
+                <div className="hidden md:flex space-x-8 text-lg font-medium">
+                    <Link href="/" className="hover:text-lime-400">
+                        Home
+                    </Link>
+                    <Link href="/products" className="hover:text-lime-400">
                         Products
                     </Link>
-                    <Link href="/checkout" className="hover:text-blue-600">
+                    <Link href="/checkout" className="hover:text-lime-400">
                         Checkout
                     </Link>
                 </div>
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-6">
                     <Link href="/checkout" className="relative">
-                        <ShoppingCartIcon className="h-6 w-6" />
+                        <ShoppingCartIcon className="h-6 w-6 hover:text-lime-400" />
                         {cartCount > 0 && (
                             <span className="absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
                                 {cartCount}
@@ -51,7 +56,7 @@ export default function Navbar() {
                     </Link>
                     <Button
                         variant="ghost"
-                        className="md:hidden"
+                        className="md:hidden hover:bg-lime-400 hover:text-white"
                         onClick={() => setMobileOpen((prev) => !prev)}
                     >
                         {mobileOpen ? (
@@ -63,12 +68,12 @@ export default function Navbar() {
                 </div>
             </div>
             {mobileOpen && (
-                <nav className="md:hidden bg-white shadow-md">
-                    <ul className="flex flex-col p-4 space-y-2">
+                <nav className="md:hidden bg-gray-100 shadow-md">
+                    <ul className="flex flex-col p-4 space-y-4">
                         <li>
                             <Link
                                 href="/"
-                                className="block hover:text-blue-600"
+                                className="block hover:text-lime-400"
                             >
                                 Home
                             </Link>
@@ -76,7 +81,7 @@ export default function Navbar() {
                         <li>
                             <Link
                                 href="/products"
-                                className="block hover:text-blue-600"
+                                className="block hover:text-lime-400"
                             >
                                 Products
                             </Link>
@@ -84,7 +89,7 @@ export default function Navbar() {
                         <li>
                             <Link
                                 href="/checkout"
-                                className="block hover:text-blue-600"
+                                className="block hover:text-lime-400"
                             >
                                 Checkout
                             </Link>
