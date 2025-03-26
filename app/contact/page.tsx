@@ -31,7 +31,7 @@ export default function Contact() {
         <div className="min-h-screen flex flex-col container mx-auto px-4 py-8">
             <h1 className="text-4xl font-bold text-center mb-6">Contact Us</h1>
             <p className="text-center text-gray-700 mb-8">
-                Have questions? We'd love to hear from you!
+                Have questions? We&apos;d love to hear from you!
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

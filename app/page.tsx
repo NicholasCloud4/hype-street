@@ -93,11 +93,11 @@ export default async function Home() {
                 <div className="max-w-3xl mx-auto px-8">
                     <h2 className="text-3xl font-extrabold mb-4">About Us</h2>
                     <p className="text-lg leading-relaxed">
-                        Hype Street is more than just a clothing brand — it's a
-                        movement. Inspired by urban culture, we design bold,
-                        trendsetting apparel that empowers self-expression. Our
-                        mission is to keep you fresh, fearless, and authentic in
-                        every outfit you wear.
+                        Hype Street is more than just a clothing brand —
+                        it&apos;s a movement. Inspired by urban culture, we
+                        design bold, trendsetting apparel that empowers
+                        self-expression. Our mission is to keep you fresh,
+                        fearless, and authentic in every outfit you wear.
                     </p>
                 </div>
             </section>
